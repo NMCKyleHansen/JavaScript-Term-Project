@@ -1,0 +1,54 @@
+body{
+    background: url("../media/puzzle-background.jpg");
+ 	background-size:cover;
+    background-repeat:no-repeat;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14pt;
+}
+
+.accordion {
+background-color: #685752;
+color: #E8E1E7;
+cursor: pointer;
+padding: 25px;
+border: none;
+text-align: left;
+outline: none;
+font-family: 'Press Start 2P', cursive;
+transition: 0.5s;
+border-bottom:1px solid black;
+width:100%;
+display:block;
+text-align:center;
+}
+
+.active, .accordion:hover {
+background-color: #C5B9BA; 
+color:#4A321D;
+}
+
+.panel {
+display: none;
+overflow: hidden;
+width:100%;
+text-align:center;
+color: black;
+background-color: rgba(232, 225, 231, 0.8);
+}
+
+.center {
+margin: auto;
+width: 50%;
+padding: 10px;
+}
+
+h1{
+color:#4A321D;
+text-align: center;
+margin-bottom: 5%;
+}	
+
+
+
+
+
