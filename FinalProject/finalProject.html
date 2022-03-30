@@ -1,58 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>3 Fun Browser Games</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Games" />
-<meta name="keywords" content="games,html,javascript" />
-<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap"rel="stylesheet"/>
-<link rel="stylesheet" href="css/finalProject.css" media="all"/>
-<script src="js/finalproject.js"></script>	
-</head>
-<body>
-    <article class="grid-container">
-        <header class="title">
-            <h1>3 Fun Browser Games </h1>
-        </header>
-            <!-- Display the 3 games-->
-            <section class="content">
-                <div class="box tip">
-                <h2>Submarine Obstacle Adventure</h2>
-                <p>
-                    <img src="media/sub.png" alt="sub">
-                  
-                    <button onclick="subgame()">
-                    Play!
-                </button>
-                <br>
-                 <label id = "sub">Are you ready for an underwater adventure? This is a great game for kids to navigate the obstacles hidden in the depths of the sea.</label></p>
-                </div>
-                <div class="box tip">
-                <h2>Cats Sandbox</h2>
-                <p><img src="media/cat4.png" alt="Cats"> <button onclick="catsandboxgame()">
-                    Play!
-                </button>
-                <br>
-                <label id = "cat">Time to play in the cat sandbox game. This is a game designed for young children to drag cat images around in a cat-themed playset.</label></p>
-                </div>
-                <div class="box tip">
-                <h2>Slot Machine</h2>
-                <img src="media/slots.png" alt="slots">
-                <p> <button onclick="slots()">
-                play!
-                </button>
-                <br>
-                <label id = "slot">Time to play a Vegas Style Slot Machine game. This is a Vegas-themed slot machine game for those of all ages that feel lucky.</label></p>
-                </div>
-            </section>
-            <section class="extra" id="extra">
-            <h2>Fun and Games for Everyone</h2>
-            <p>This page is dedicated to people exploring the use of HTML and javascript to express their creativity.</p>
-            </section>
-<footer class="contact">
-<p> &copy; Kyle Hansen(Hansenkylem@gmail.com), Student and Open-Source software promoter</p>
-</footer>
-</article>
-</body>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Game Tabs</title>
+    <link rel="stylesheet" href="css/finalProject.css" />
+  </head>
+
+  <body>
+    <header><h1>Great Browser Games</h1></header>
+    <section class="page">
+      <div class="tabs">
+        <ul class="tab-list">
+          <li class="active"><a class="tab-control" href="#game1"><h3>Underwater</h3></a></li>
+          <li><a class="tab-control" href="#game2"><h3>Cats</h3></a></li>
+          <li><a class="tab-control" href="#game3"><h3>Slot Machine</h3></a></li>
+        </ul>
+        <div class="tab-panel active" id="game1" >
+          <h2>Submarine Adventure</h2>
+          <object data="subpreview.html" ></object>
+        
+           <p>Are you ready for an underwater adventure?  This is a great game for kids to navigate the obstacles hidden in the depths of the sea. Use the "<b>Up</b>", "<b>Down</b>", "<b>Forward</b>", and "<b>Back</b>" buttons to help to submarine avoid dangerous obstacles.</p>
+           <button class ="button buttonorange" id="button1">
+            Play!
+        </button>
+        <p> </p>
+
+        </div>
+
+        <div class="tab-panel" id="game2" >
+          <h2>Cat Sandbox</h2>
+          <img src="media/cat4.png" alt="cat" height="250" width="300">
+            <p>Time to play in the cat sandbox game. This is a game designed for young children to drag cat images around in a cat-themed playset. <b>Drag</b> and <b>drop</b> the images around the screen to make your own playset adventure. </p>
+            <button class ="button buttonyellow" id="button2">
+              Play!
+          </button>
+          <p> </p>
+        </div>
+
+        <div class="tab-panel" id="game3" >
+          <h2>Slot Machine</h2>
+          <object data="slotpreview.html" ></object>
+            <p>Time to play a Vegas Style Slot Machine game. This is a Vegas-themed slot machine game for those of all ages that feel lucky. Press the "<b>Spin to Win</b>" button to increase your winnings.</p>
+            <button class ="button buttongreen" id="button3" >
+              Play!
+          </button>
+          <p> </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/finalProject.js"></script>
+
+  </body>
 </html>
