@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>My under water animation</title>
+<style>
+ body{
+  background-image:url('media/evrunderwater.jpg');
+  background-repeat:no-repeat;
+  background-size:980px auto;
+  background-color:black;
+}
+#container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+#sub {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  background-color: none;
+  transform: rotate(0deg);
+}
+p{
+  color:white;
+}
+input{
+	text-align:center;
+}
+#coords{
+	position:absolute;
+	left:550px;
+	top:20px;
+}
+section{
+	width:900px;
+	height:600px;
+}
+button{
+	width:200px;
+	padding:10px;
+	color:white;
+	background-color:rgb(100, 198, 236);
+  border-radius: 5px;
+}   
+</style>
+</head>
+<body id="body">
+<article>
+<section>
+<div id ="container">
+<img alt="sub" src="media/sub.png" id ="sub" />
+</div>
+</section>
+ </article>
+ <script>
+ var id; var positionX=0; var positionY=0;
+ var sub = document.getElementById("sub"); 
+
+ async function subdance() {
+while (true) {
+  await new Promise(resolve => setTimeout(resolve, 1000));
+  positionY=sub.y;
+  positionX=sub.x;   
+  positionY = positionY + 5;
+  sub.style.top = positionY + 'px';
+
+  await new Promise(resolve => setTimeout(resolve, 1000));
+  sub.style.top = 5 + 'px';
+
+  await new Promise(resolve => setTimeout(resolve, 1000));
+  sub.style.top = 30 + 'px';
+
+  await new Promise(resolve => setTimeout(resolve, 1000));
+  sub.style.top = 60 + 'px';
+ 
+  await new Promise(resolve => setTimeout(resolve, 1000));
+ 
+  sub.style.top = 70 + 'px';
+
+  await new Promise(resolve => setTimeout(resolve, 1000));
+
+  sub.style.top = 60 + 'px';
+
+  await new Promise(resolve => setTimeout(resolve, 1000));
+
+  sub.style.top = 30 + 'px';
+ 
+  await new Promise(resolve => setTimeout(resolve, 1000));
+
+  sub.style.top = 5 + 'px';
+  }
+ }
+subdance(); 
+ </script>
+</body>
+</html>

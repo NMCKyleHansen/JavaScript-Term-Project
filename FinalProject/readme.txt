@@ -5,19 +5,19 @@
 ## This site contains a main html page and information about 3 games that will be linked into the page in the future.
 
 ## Technologies Used in interface html
-HTML5,CSS3, 
+HTML5,CSS3, JavaScript,jQuery
 
 ## Technologies Used in games
 HTML5,CSS3,JavaScript,jQuery
 
 
-## Description: The main interface html page is flex grid containing 3 sections. There is one section per game. The games are as follows:
+## Description: The main interface html page is a jQuery tabbed panel containing 3 tabs. There is one section per game. The games are as follows:
 
-1.) Submarine Obstacle Adventure: A game for kids to navigate the obstacles hidden in the depths of the sea. This game uses the HTML canvas and JavaScript.
+1.) Submarine Obstacle Adventure(Submarine): A game for kids to navigate the obstacles hidden in the depths of the sea. This game uses the HTML canvas and JavaScript.
 
-2.) Cats Sandbox: A game designed for young children to drag cat images around in a cat-themed playset. This game used jQuery and draggable images.
+2.) Cats Sandbox(catbox): A game designed for young children to drag cat images around in a cat-themed playset. This game used jQuery and draggable images.
 
-3.) Slot Machine: A Vegas-themed slot machine game for those of all ages that feel lucky. This program uses jQuery.
+3.) Slot Machine(slots}: A Vegas-themed slot machine game for those of all ages that feel lucky. This program uses jQuery.
 
 
 ## License
