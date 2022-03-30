@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Sub</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="css/submarine.css" media="all"/>
+</head>
+<body onload="initGame()">
+<script src="js/submarine.js"></script>
+<div style="text-align:center;width:960px;background-color:rgb(11, 39, 201); color: ghostwhite;">
+  <button onmousedown="moveup()" onmouseup="clearmove()" >UP</button><br><br>
+  <button onmousedown="moveback()" onmouseup="clearmove()">Back</button>
+  <button onmousedown="moveforward()" onmouseup="clearmove()" >Forward</button><br><br>
+  <button onmousedown="movedown()" onmouseup="clearmove()" >DOWN</button>
+<h1>Use the "Up", "Down", "Forward", and "Back" buttons to help to submarine avoid dangerous obstacles.</h1>
+</div>
+<div id="infoModal" class="modal">
+
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Oh... NO... You crashed!</p>
+      <input type="button" value="Play Again" name="restart" id="restart" style="font-size : 20px; width: 50%; height: 50px;" />
+      <input type="button" value="Exit" name="exit" id="exit" style="font-size : 20px; width: 50%; height: 50px;"/>
+    </div>
+  
+  </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+#slots_box {
+    background-color: black;
+    padding: 1px;
+    margin: 1px;
+    width: 310px;
+  }
+  .slots {
+    width: 100px;
+    height: 100px;
+    font-size: 100px;
+    overflow: hidden;
+    border: 1px solid white;
+    float: left;
+  }
+  .slots .box {
+    margin-top: 0;
+    width: 100px;
+  }
+  .slots .slot {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+  }
+  .slots .slot img {
+    max-width: 135px;
+  }

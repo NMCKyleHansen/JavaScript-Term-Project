@@ -1,225 +1,144 @@
-﻿
-* {
-	box-sizing: border-box;
-  }
-body {
-	color: white;
-	font-family: 'Roboto', sans-serif;
-	font-size:110%;
-	background: #424242;
-}
-nav {
-	height:auto;
-	background: #D6680B;
-    padding:10px;
-}
-nav a {
-    text-decoration:none;
-}
-nav ul li {
-	list-style:none;
-	border-bottom:black 2px solid;
-	border-right:black 2px solid;
-	text-align:center;
-	width:95%;
-	background: #424242;
-}
-nav ul li a:link, nav ul li {
-    color:white;
-   	text-decoration:none;
-}
-nav ul li a:hover, nav ul li a:active{
-	display:block;
-    background: #0054DC;
-    color: white;
-}
-a:visited{
-	color:#D6680B;
-	text-shadow:1px 1px black;
-}
-p.tip {
-    position: relative;
-    z-index: 100;
-	padding:10px;
-}
+﻿body {
+  background-color: blue;
+  color: #fff;
+  margin: 0;
+  padding: 0;}
 
-p.tip span {
-    display: none;
-}
+.page {
+  max-width: 640px;
+  margin: 0 auto 30px auto;}
 
-p.tip:hover span {
-    display: block;
-    position: absolute;
-    width: 200px;
-    padding: 3px;
-    border: 1px solid black;
-    background: linear-gradient(#0F3B5F,white);
+.panel {
+  background-color: #fff;
+  color: #667;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
+  overflow: auto;}
+
+button {
+  border: none;}
+
+  .button {
+    border: none;
     color: black;
+    padding: 15px 32px;
     text-align: center;
-	margin-top:1%;
-} 
-header{
-	width:100%;
-	margin-top:0%;
-	background:#D6680B;
-	padding:5px;
-	box-shadow:3px 3px #555; 
-	animation-duration: 2s;
-    animation-name: slidein;
-}
-@keyframes slidein {
-    from {
-        margin-left:200%;
-        width: 300%;
-        }
-    
-    to {
-        margin-left: 0%;
-        width: 100%;
-        }
-    }
-h1{
-	color:white;
-    text-shadow:1px 1px black;	
-    text-align:center;
-    font-size:3em;
-    font-family: 'Roboto', sans-serif;
-}
-h2{
-	color:white;
-    text-shadow:1px 1px 1px black;	
-    text-align:center;
-    font-family: 'Roboto', sans-serif;
-    font-size:1em;
-}
-section, div{
-	padding:5px;
-	margin-top:0px;
-}
-#extra {
-    background: #0054DC;
-    padding: 25px;
-    box-shadow:3px 3px #555;
-	
-}
-footer {
-    color: #D6680B;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    align-content: center;
     text-align: center;
-    padding: 15px;
-	width:100%;
-}
-img{
-	width:50%;
-}
-img span{
-	width:150px;
-}
-.box{
-	text-indent:10px;
-	display:inline-grid;
-	margin-right:1%;
-	margin-left:1%;
-	margin-bottom:150px;
-	outline: 2px inset white;
-	width:30%;
-}
-.center{
-	margin-right:auto;
-	margin-left:auto;
-}
+  }
 
-.title{ grid-area:head; }
-.menu{ grid-area:nav; }
-.content{ grid-area:main; }
-.extra{ grid-area:aside; }
-.contact{ grid-area:foot; }
-
-/* For mobile phones: */
-@media only screen and (max-width: 480px) {
-.grid-container{
-		display:grid;
-		grid-template-areas:
-			'head head head'
-			'nav nav nav'
-			'main main main'
-			'aside aside aside'
-			'foot foot foot';
-		grid-gap:0px;
-		padding:1px;
-	}	
-.box{
-		margin-right:5%;
-		margin-left:5%;
-	}
-	p.tip span{
-		padding-top:2%;
-		padding-right:2%;
-	}
-	header img{
-		display:none;
-	}
-}
+h1 {
+  text-align: center;
+  width: 200px;
+  height: 100px;
+  margin: 40px auto 40px auto;
+  background-image: url('../media/games.png');
+  background-repeat: no-repeat; 
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;}
 
 
-/* For tablets: */
-@media only screen and (min-width:481px) {
-	.grid-container{
-		display:grid;
-		grid-template-areas:
-			'head head head'
-			'main main main'
-			'nav nav nav'
-			'aside aside aside'
-			'foot foot foot';
-		grid-gap:0px;
-		padding:5px;
-	}
-	#things{
-		display:none;
-	}
-}
+body, button {
+    font-family: 'Jacques Francois', serif;}
 
-/* For desktop: */
-@media only screen and (min-width: 769px) {
-	.grid-container{
-		display:grid;
-		grid-template-areas:
-			'head head head head head head'
-			'main main main main nav nav'
-			'aside aside aside aside nav nav'
-			'foot foot foot foot foot foot';
-		grid-gap:0px;
-		padding:10px;
-	}
-	#things{
-		display:inline;
-	}
-	#extra img{
-		max-width:400px;
-	}
-	#extra{
-		font-size:1.3em;
-	}
-}
+h2, h3 {
+  font-weight: normal;
+  margin: 0;}
+h2 {
+  color: #667;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 230%;
+  line-height: 1em;
+  padding: 20px 0 0 20px;}
+h3 {
+  font-size: 90%;
+  letter-spacing: 0.2em;}
+
+p {
+  font-family: 'Quattrocento Sans', sans-serif;
+  line-height: 1.4em;}
+
+a {
+    text-decoration: none;}
+
+button {
+  font-size: 90%;
+  text-align: left;
+  text-transform: uppercase;}
+
+ 
+#billboard {text-align: center;}
+.js-warning {display: none;}
+
+.no-js .js-warning {
+  display: block;
+  border: 3px solid #fff;
+  text-align: center;
+  background-color: #fff;
+  color: #db5391;
+  padding: 10px;}
+
+.tab-list {
+  margin: 0;
+  padding: 0;}
+
+.tab-list li {
+  display: inline-block;
+  list-style-type: none;
+  background-color: #303030;
+  border-bottom: 3px solid #858585;
+  font-family: 'Jacques Francois', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;}
+
+.tab-list li a {
+  color: #f2f2f2;
+  display: block;
+  padding: 3px 10px 3px 10px;}
 
 
-.icon-bar {
-    width: 90%; 
-    background-color:  #D6680B;
-    overflow: auto; 
-}
+.tab-list li.active, .tab-list li.hover {
+  background-color: #e5e5e5;
+  border-bottom: 3px solid #e5e5e5;}
 
-.icon-bar a {
-    float: left; 
-    text-align: center; 
-    width: 25%; 
-    padding: 12px 0; 
-    transition: all 0.3s ease; 
-    color: white; 
-    font-size: 18px; 
-}
+.tab-list li.active a, .tab-list li a:hover {
+  color: #667;
+  background-color: #e5e5e5;}
 
-.icon-bar a:hover {
-    background-color: #000; 
-}
+.tab-panel {
+  display: none;
+  background-color: #e5e5e5;
+  color: black;
+  min-height: 150px;
+  align-content: center;
+  text-align: center;
+  overflow: auto;}
 
+.tab-panel.active {
+  display: block;}
+
+.tab-panel p {
+  margin: 20px;}
+
+  h4 {
+    font-family: 'Quattrocento Sans', sans-serif;
+    line-height: 1.4em;
+    text-align: left;
+ }
+
+  .buttonorange {background-color: orange;} /* Orange */
+  .buttongreen {background-color: rgb(59, 241, 59);} /* light lime Green */
+  .buttonyellow {background-color: yellow;} /* Yellow */
