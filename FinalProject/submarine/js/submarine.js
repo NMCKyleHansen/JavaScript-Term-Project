@@ -11,9 +11,9 @@ var myObstacles = [];
 
 /* Setup the canvas items */
 function initGame() {
-    character = new canvasimage(60, 70, "media/sub.png", 10, 120, "image");
-    score = new canvastext("25px", "OCR A Extended", "black", 700, 500, "text");
-    level = new canvastext("25px", "OCR A Extended", "black", 480, 500, "text");
+    character = new canvasimage(60, 70, "media/sub.png", 10, 120);
+    score = new canvastext("25px", "OCR A Extended", "black", 700, 500);
+    level = new canvastext("25px", "OCR A Extended", "black", 480, 500);
     gameCanvas.start();
 }
 
