@@ -28,3 +28,7 @@ document.getElementById("button1").addEventListener("click", function(){
 document.getElementById("button2").addEventListener("click", function(){
     location.replace("catbox/catbox.html");
     });
+    /* Listener to play slots game*/  
+document.getElementById("button3").addEventListener("click", function(){
+  location.replace("slots/slots.html");
+  });

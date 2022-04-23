@@ -15,10 +15,10 @@ Drag and drop the images around the screen to make your own playset adventure.
 There are currently no issues beyond aesthetics. 
 
 ## plans to resolve the problems or issues
-I will probably change the size of the buttons and the modal window. 
+No plans for updates.
 
 ## plans for future releases
-Future releases will just be for aesthetics.  
+If there are Future releases they will just be for aesthetics.  
 
 ## License
 The code in this project itself is licensed under the Creative Commons Attribution 3.0 Unported license. The images fall under the Personal Use License.

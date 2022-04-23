@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="css/slots.css" media="all"/>
 </head>
 <body>
+  <section >
   <div id="slots_box">
     <div class="slots" id="pos1">
     <div class="box"></div></div>
@@ -15,6 +16,39 @@
     <div style="text-align:center">
       <input type="button" value="Spin to Win!" id="spinme" style="margin-top:4px;">
     </div>
+  </div>
+</section>
+
+<section class="center" style="background-color:rgb(19, 199, 230);opacity:.8;padding-top:5px;padding-bottom:10px;height:150px;width:310px;">
+<p style="text-align:center;"> </p>
+<label id="results">Place a bet!</label> 
+<p>Coins:<input type="text" id="coins" value="10" readonly> </p> 
+<p><label id="label" for="bet">bet:</label><input class="formEntry" id="bet" type="number"  min="1" max="3" value="1"></p>  
+<button id="rules">Rules</button>
+<button id="quit">Quit</button>
+<button id="reset">Start Over</button>
+
+</section>
+
+<div id="infoModal" class="modal">
+
+    <div class="modal-content" style="background-color:rgb(19, 199, 230);opacity:.8;padding-top:5px;padding-bottom:10px;height:150px;width:310px;">
+      <span class="close">&times;</span>
+      <p>Payout Rules</p>
+      <p>3 in a row = 10*bet</p>
+      <p>2 in a row = 2*bet</p>
+    </div>
+  
+  </div>
+  <div id="gameover" class="modal">
+
+    <div class="modal-content" style="background-color:rgb(248, 199, 20);opacity:.8;padding-top:5px;padding-bottom:10px;height:150px;width:310px;">
+      <span class="close">&times;</span>
+      <p>Game Over!</p>
+      <input type="button" value="Play Again" name="restart" id="restart" style="font-size : 20px; width: 50%; height: 50px;" />
+      <input type="button" value="Exit" name="exit" id="exit" style="font-size : 20px; width: 50%; height: 50px;"/>
+    </div>
+  
   </div>
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 <script src="js/slots.js"></script>
