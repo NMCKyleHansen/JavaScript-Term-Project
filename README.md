@@ -6,8 +6,8 @@ CIT 190 JavaScript Term Project
 
 ## This site contains a main html page and information about 3 games that will be linked into the page in the future.
 
-## Technologies Used in interface html
-HTML5,CSS3, 
+## Technologies Used in interface
+HTML5,CSS3,JavaScript,jQuery 
 
 ## Technologies Used in games
 HTML5,CSS3,JavaScript,jQuery
